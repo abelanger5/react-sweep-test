@@ -33,7 +33,7 @@ await new Promise((resolve, reject) => {
 
 // Configure Cloudflare dev server
 // https://miniflare.dev/get-started/api
-const port = await getPort({ port: portNumbers(8080, 8090) });
+const port = await getPort({ port: 5174 });
 mf = new Miniflare({
   name: edgeConfig.name,
   log: new Log(LogLevel.INFO),
