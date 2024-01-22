@@ -66,7 +66,7 @@ $ yarn install
 $ yarn workspace app start
 ```
 
-The app will become available at [http://localhost:5173/](http://localhost:5173/) (press `q` + `Enter` to exit).
+The app will become available at [http://localhost:5174/](http://localhost:5174/) (press `q` + `Enter` to exit).
 
 **IMPORTANT**: Ensure that VSCode is using the workspace [version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions)
 and ESLint.
@@ -75,7 +75,7 @@ and ESLint.
 
 ## Scripts
 
-- `yarn start` — Launches the app in development mode on [`http://localhost:5173/`](http://localhost:5173/)
+- `yarn start` — Launches the app in development mode on [`http://localhost:5174/`](http://localhost:5174/)
 - `yarn build` — Compiles and bundles the app for deployment
 - `yarn lint` — Validate the code using ESLint
 - `yarn tsc` — Validate the code using TypeScript compiler
