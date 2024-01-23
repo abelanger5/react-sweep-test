@@ -2,7 +2,7 @@
 /* SPDX-License-Identifier: MIT */
 
 import { execa } from "execa";
-import getPort, { portNumbers } from "get-port";
+import getPort from "get-port";
 import { debounce } from "lodash-es";
 import { Log, LogLevel, Miniflare } from "miniflare";
 import { getArgs, getCloudflareBindings, readWranglerConfig } from "./utils.js";
