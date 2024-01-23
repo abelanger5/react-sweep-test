@@ -4,7 +4,7 @@
 import getPort from "get-port";
 import { listen } from "./index";
 
-const port = await getPort({ port: portNumbers(8080, 9000) });
+const port = await getPort({ port: 5188 });
 
 let dispose = listen(port);
 
