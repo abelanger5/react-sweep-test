@@ -4,6 +4,7 @@
 import { applyWSSHandler } from "@trpc/server/adapters/ws";
 import { WebSocketServer } from "ws";
 import { app } from "./app";
+import { defaultPort } from "./start";
 import { logger } from "./core/logging";
 import { createWsContext as createContext } from "./core/trpc";
 import { router } from "./routes";
@@ -50,8 +51,8 @@ export function listen(port: number) {
   };
 }
 
-if (process.env.PORT && process.env.K_SERVICE?.startsWith("server")) {
-  const port = parseInt(process.env.PORT);
+if (process.env.K_SERVICE?.startsWith("server")) {
+  const port = parseInt(process.env.PORT || defaultPort);
   const dispose = listen(port);
 
   /* eslint-disable-next-line no-inner-declarations */
