@@ -2,6 +2,7 @@
 /* SPDX-License-Identifier: MIT */
 
 import getPort, { portNumbers } from "get-port";
+const defaultPort = 6060;
 import { listen } from "./index";
 
 const port = await getPort({ port: portNumbers(8080, 9000) });
