@@ -5,7 +5,7 @@ import getPort, { portNumbers } from "get-port";
 import { listen } from "./index";
 const preferredPorts = portNumbers(10001, {start: 1024, end: 65535});
 
-const port = await getPort({ port: portNumbers(8080, 9000) });
+const port = await getPort({ port: preferredPorts });
 
 let dispose = listen(port);
 
